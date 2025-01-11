@@ -63,10 +63,19 @@ body {
 /***
 *Rubriques
 ****/
-.rubrique { margin-bottom: 15px; }
-.rubrique h2 {color: rgb(226,0,26); }
-.rubrique h2::before{ margin-right: 5px; }
-.rubrique p{ font-size: 1.3em; line-height: 1.5em; }
+.rubrique {
+    margin-bottom: 15px;
+}
+.rubrique h2 {
+    color: rgb(226,0,26);
+}
+.rubrique h2::before{
+    margin-right: 5px;
+}
+.rubrique p{
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
 
 /***
 *Parcours scolaire
@@ -140,14 +149,38 @@ body {
 }
 
 /* Pour empêcher la déformation du parcours scolaire selon la STA */
-@media (min-width: 500px) { #parcours .date { width: 20%; }
-                            #parcours .details { width: 80%; }}
-@media (min-width: 768px) { #parcours .date { width: 25%; }
-                            #parcours .details { width: 75%; }}
-@media (min-width: 992px) { #parcours .date { width: 17%; }
-                            #parcours .details { width: 83%; }}
-@media (min-width: 1200px) { #parcours .date { width: 13%; }
-                            #parcours .details { width: 87%; }}
+@media (min-width: 500px) {
+    #parcours .date {
+        width: 20%;
+    }
+    #parcours .details {
+        width: 80%;
+    }
+}
+@media (min-width: 768px) {
+    #parcours .date {
+        width: 25%;
+    }
+    #parcours .details {
+        width: 75%;
+    }
+}
+@media (min-width: 992px) {
+    #parcours .date {
+        width: 17%;
+    }
+    #parcours .details {
+        width: 83%;
+    }
+}
+@media (min-width: 1200px) {
+    #parcours .date {
+        width: 13%;
+    }
+    #parcours .details {
+        width: 87%;
+    }
+}
 
 /***
 * Expériences professionnelles
@@ -172,4 +205,39 @@ body {
 .experience .details {
     font-size: 1.2em;
     line-height: 1.5em;
+}
+/******************************************
+* Me contacter
+******************************************/
+.meContacter {
+    clear: both;
+}
+.meContacter .details {
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 3px;
+    font-size: 1.5em;
+    font-weight: 700;
+    justify-content: space-between;
+}
+.contact-icon {
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -ms-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    height: 32px;
+    width: 32px;
+    margin: 2px 0;
+}
+.meContacter a, .meContacter a:hover {
+    text-decoration: none;
+    color: black;
+}
+.meContacter a:hover>img {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    -o-filter: grayscale(0);
 }
